@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "phys512"
+version = "0.0.0"
+description = ""
+authors = ["Yifan Sun <yifan.sun@mail.mcgill.ca>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "~3.10.6"
+numpy = "^1.23.2"
+pandas = "^1.4.4"
+scipy = "^1.9.1"
+matplotlib = "^3.5.3"
+numba = "^0.56.2"
+ipython = "^8.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
