@@ -45,6 +45,17 @@ def rat_fit_p(x,y,n,m):
 
 
 def problem4(f, bound, name, num_point=8, n=4, m=5, num_sample=100):
+    """
+    Function for q4 of assignment 1
+    :param f: input function to interpolate
+    :param bound: upper bound
+    :param name: name of the function
+    :param num_point: number of data points generated from the function
+    :param n: order of p(x)
+    :param m: order of q(x)
+    :param num_sample: number of points to test the error
+    :return: none
+    """
     global log
     log.append(f'Considering for f(x)={name}:')
 
@@ -82,9 +93,12 @@ def problem4(f, bound, name, num_point=8, n=4, m=5, num_sample=100):
 
 
 if __name__ == '__main__':
+    # Init the logger
     log = Log()
 
+    # f(x)=cos(x)
     problem4(np.cos, np.pi / 2, 'cos(x)')
+    # f(x)=1/(x^2+1)
     problem4(lambda x: 1 / (x ** 2 + 1), 1, '1/(x^2+1)')
 
     log.save('4.txt')
