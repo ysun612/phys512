@@ -72,7 +72,7 @@ if __name__ == '__main__':
     np.savetxt('planck_chain_tauprior.txt', res_mcmc_tauprior)
 
     # Make the plots
-    # do_plot(p_mcmc, chi2_mcmc, num_step, '1d')
+    do_plot(p_mcmc, chi2_mcmc, num_step, '1d')
 
     # Print fit results
     p = np.mean(p_mcmc[-2000:, :], axis=0)
