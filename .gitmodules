@@ -1,0 +1,3 @@
+[submodule "assignment6/LOSC_Event_tutorial"]
+	path = assignment6/LOSC_Event_tutorial
+	url = https://github.com/losc-tutorial/LOSC_Event_tutorial.git
